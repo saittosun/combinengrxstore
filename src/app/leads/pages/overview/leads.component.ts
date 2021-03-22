@@ -18,26 +18,8 @@ export class LeadsOverviewPageComponent implements OnInit {
               private leadService: LeadService) { }
 
   ngOnInit(): void {
-    // this.store.getCustomers().subscribe(customers => {
-    //   if(customers.length === 0) {
-    //     this.customerService.fetchCustomers().subscribe(customers => {
-    //       this.store.setCustomers(customers);
-    //       console.log(customers);
-    //       this.customers = customers;
-    //     });
-    //   } else {
-    //     this.customers = customers;
-    //   }
-    // })
     this.store.getLeads().subscribe(leads => {
-      if(leads.length === 0) {
-        this.leadService.fetchLeads().subscribe(leads => {
-          this.store.setLeads(leads)
-          this.leads = leads;
-        })
-      }else {
-        this.leads = leads;
-      }
+      console.log(leads);
     })
   }
 

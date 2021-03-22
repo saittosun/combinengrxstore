@@ -8,10 +8,10 @@ export interface LeadListState {
 }
 
 export interface LeadsState {
-  list: LeadListState;
+  listLead: LeadListState;
 }
 
-export interface AppState {
+export interface AppLeadState {
   leads: LeadsState;
 }
 
