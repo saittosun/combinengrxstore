@@ -1,0 +1,6 @@
+<tr *ngFor="let lead of leads" routerLink="lead-detail/{{lead.id}}">
+  <td>{{lead.status}}</td>
+  <td>{{lead.customer}}</td>
+  <td>{{lead.name}}</td>
+  <td><i class="fa fa-arrow-circle-right"></i></td>
+</tr>
