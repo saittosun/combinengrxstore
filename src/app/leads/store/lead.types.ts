@@ -7,13 +7,13 @@ export interface LeadListState {
   error: string;
 }
 
-export interface LeadsState {
-  listLead: LeadListState;
-}
+// export interface LeadsState {
+//   listLead: LeadListState;
+// }
 
-export interface AppLeadState {
-  leads: LeadsState;
-}
+// export interface AppLeadState {
+//   leads: LeadsState;
+// }
 
 export interface LeadAction {
   type: keyof typeof LeadActions;

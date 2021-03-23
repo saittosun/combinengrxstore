@@ -15,7 +15,7 @@ export class LeadFacade {
   //   this.store.dispatch(setLeads({leads: leads}));
   // }
 
-  public getLeads(): Observable<Lead[]> {
-    return this.store.select('leads').pipe(map(state => state.listLead.projects));
+  public getLeads() {
+    return this.store.select('leads').pipe(map(state => state.projects));
   }
 }

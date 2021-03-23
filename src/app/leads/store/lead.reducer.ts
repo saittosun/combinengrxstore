@@ -25,12 +25,9 @@ export const LEAD_INITIAL_STATE: LeadListState = {
 
 export const leadReducer = createReducer(
   LEAD_INITIAL_STATE as any,
-  on(getLeads, (actionState: LeadListState) => ({
-    ...actionState
-  })) as any,
   on(
     getLeadsSuccess,
-    (state: LeadListState, { projects }: any) => ({
+    (state: LeadListState) => ({
       ...state
     })
   )as any,
